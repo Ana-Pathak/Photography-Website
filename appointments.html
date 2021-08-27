@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="project.css">
+	<script src="appointments.js"></script>
+	<script src="project.js"></script>
+	<script src="location.js"></script>
+    <title>Picturesque Photos: Services</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header class="content">
+	<!-- Logo and brand name -->
+         <h1><img src="PICTURESQUEPHOTOS.png" alt="Picturesque Photos" class="center">Picturesque Photos </h1>
+
+        <!-- Navigaton Bar -->
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+	    <a href="faqs.html">FAQs</a>
+	    <a href="appointments.html">Appointments</a>
+        </div>
+    </header>
+
+    <main>
+		
+        <div class="content" id="tabs">
+	    <!--Location section -->
+            <h2><b>Location</b></h2>
+            <div id="tabs-1">
+              <p>We operate all over the world however, our primary location is South Carolina, USA. With other regions in/ across the U.S. we need more time for travel prepations
+		as well as travel accomodations that will help us with our travel. We have done photoshoots in other countries like Nepal, Italy as well as different regions in the U.S. like
+		California, Utah, New York and more. For personal inquires, please contact us.</p>
+			  </div>
+		
+            <!--Appointment Section -->
+            <h2><b>Book an appointment</b></h2>
+            <div id="tabs-2">
+		<!--Form to book an appointment -->
+		<form action ="responseAppointment.html" name="appointment_form" id="appointment_form">
+		<fieldset>
+		<legend>Book now: </legend>
+			<!--Date Info -->
+			<label for="appointmentDate">Appointment Date:</label>
+			<div>
+ 		        <input type ="date" name="appointmentDate" id="appointmentDate">
+			</div>
+			<!--Email Info -->
+			<div>
+  			<label for="email">Email Address:</label>
+  			<input type="text" id="email" name="email" required>
+			</div>
+			<!--Phone info -->
+			<div>
+			<label for="phone">Phone Number:</label>
+  			<input type="text" id="phone" name="phone">
+			</div>
+			<div> <input type="submit" value="Submit"> </div>
+		</fieldset>
+		</form>
+		<!--End of form -->
+	    </div>
+        </div>
+		<!--Location-->
+		<h4>Gelocation for appointments</h4>
+		<h5>Click the button to get your coordinates.
+		<br>
+		<br>
+		<button onclick="getLocation()" id ="b1">Get Locations</button>
+		</h5>
+		<p id="location"></p>
+
+		<!--location web api-->
+		<!--
+		<script>
+		const x = document.getElementById("location");
+		function getLocation() {
+		  try {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		  } catch {
+			x.innerHTML = err;
+		  }
+		}
+		function showPosition(position) {
+		  x.innerHTML = "Latitude: " + position.coords.latitude + 
+		  "<br>Longitude: " + position.coords.longitude;
+		}
+		</script>
+		-->
+    </main>
+
+	<div id="locate"></div>
+    <!--Setting up the footer -->
+    <div class="footer">
+		<div id="info"></div>
+		<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+		</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picturesque Photos: Services</title>
+
+    <!-- accordian plugin -->
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <script src="project.js"></script>
+    <script src="accordian.js"></script>
+
+</head>
+<body>
+    <header class="content">
+	<!--Setting up the header. Contains brand name and logo -->
+         <h1><img src="PICTURESQUEPHOTOS.png" alt="Picturesque Photos" class ="center">Picturesque Photos </h1>
+
+        <!-- Navigaton Bar -->
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+	    <a href="faqs.html">FAQs</a>
+	    <a href="appointments.html">Appointments</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="content" id="tabs">
+	    <!--Previous Work Section -->
+            <h2><b>Previous Work</b></h2>
+            <div id="tabs-1">
+              <p>We have taken part in many photography ventures. You can go through our many photograph works from our previous appointments. Hope you enjoy!</p>
+            </div>
+
+	<div id="accordion">
+   	 <h3 class ="acc">Weddings</h3>
+    	 <div id="col">
+        <img src="wedding.jpg" alt="Wedding">
+        <img src="wedding2.jpg" alt="Wedding">
+    	</div>
+
+    	<h3 class="acc">Graduation</h3>
+    	<div>
+        <img src="graduation.jpg" alt="Graduation">
+        <img src="graduation2.jpg" alt="Graduation">
+    	</div>
+
+    	<h3 class="acc">Prom</h3>
+    	<div>
+        <img src="prom.jpg" alt="Prom">
+        <img src="prom2.jpg" alt="Prom">
+    	</div>
+	</div>
+	   
+	    <!--Services offered section -->
+            <h2><b>Services offered</b></h2>
+            <div id="tabs-2">
+		<p>We offer photography services for different events like prom, graduation, weddings, concerts, home pictures, family pictures.
+		We also have a partnership with Quick Prints our local photo priint shop. WIth this partnership you will get your photos mailed right to your doorstep within
+		a week of your appointment. For more information on our different payment plans please click on the button below.</p>
+		<input type="button" onclick="location.href='payment.html'" value="Payment Plans"/>
+	    </div>
+        </div>
+    </main>
+
+    <div id="locate"></div>
+    <!--Setting up the footer -->
+    <div class="footer">
+   	 <div id="info"></div>
+	<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </div>
+</body>
+</html>

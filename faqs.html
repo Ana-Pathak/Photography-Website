@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="appointments.js"></script>
+    <link rel="stylesheet" type="text/css" href="project.css">
+	<script src="project.js"></script>
+    <title>Picturesque Photos: Services</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header class="content">
+	 <!--Brand logo and name as header -->
+         <h1><img src="PICTURESQUEPHOTOS.png" alt="Picturesque Photos" class ="center">Picturesque Photos </h1>
+
+        <!-- Navigaton Bar -->
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+	    <a href="faqs.html">FAQs</a>
+            <a href="appointments.html">Appointments</a>	
+        </div>
+    </header>
+
+    <main>
+        <div class="content" id="tabs">
+	    <!--Q&A section -->
+        <h2><b>Q&A</b></h2>
+            <div id="tabs-1">
+              <p>How early in advance do we need to book an appointment? <br>This really depends! For prom and graduation season we take appointmnts usually a week or sometimes even a month in advance!
+		      However, there are times that we book appointments even a day in advance! Best way to get that information is through contacting us which you can do through the home page!</p>
+	        <div>
+		    <p>Do you offer discounts? <br>Yes, we do! We offer many discounts from student, military to even medical! Please reach out to us if you feel like you're eligible.</p>
+            </div>
+	        <div>
+		    <p>Can you also do editing of photos? <br>yes! We've got this request so many times that we have included editing in your photo fee. We always edit the photos per your request
+		    and make sure you approve of those edits. We send you edit and unedited photos!</p>
+		    </div>
+		   </div>
+	
+	    <!--Ask a question section -->
+            <h2><b>Ask us a question</b></h2>
+            <div id="tabs-2">
+		<!--Setting up the form -->
+		<form action ="responseAppointment.html" name="appointment_form" id="appointment_form">
+		<fieldset>
+		<legend>Questionaire Form: </legend>
+			<!--Question -->
+			<label for="question">Question:</label>
+ 		        <textarea name="question" id="question" rows="4" cols="50">Question is...</textarea>
+			<div>
+			<!--Email -->
+  			<label for="email">Email Address:</label>
+  			<input type="text" id="email" name="email" required>
+			</div>
+			<!--Phone-->
+			<div>
+			<label for="phone">Phone Number:</label>
+  			<input type="text" id="phone" name="phone">
+			</div>
+			<!--Submit button-->
+			<div> <input type="submit" value="Submit"> </div>
+		</fieldset>
+		</form>
+		<!--End of form -->
+	    </div>
+        </div>
+    </main>
+	
+	<div id="locate"></div>
+    <!--Setting up the footer -->
+    <div class="footer">
+    <div id="info"></div>
+	<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </div>
+</body>
+</html>
